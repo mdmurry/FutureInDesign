@@ -24,6 +24,7 @@ public class Start {
 			System.out.println("3) I am in a crocodile infested moat!");
 			System.out.println("4) I am on the search for purpose, like all wanderers");
 			System.out.println("5) I dont know, I see a house in the distance!");
+			System.out.println("6) I am on a ship, traveling through space!");
 			System.out.println("7) I'm somewhere in the desert near a small town.");
 			switch(input.nextInt()){
 			case 1: 
@@ -48,12 +49,12 @@ public class Start {
 				
 			case 6: 
 				Alex alex = new Alex();
-				alex.Next(player);
+				alex.Next(player, input);
 				break;
 				
 			case 7:
 				Dale dale = new Dale();
-				dale.Next(player);
+				dale.Next(player, input);
 				break;
 			
 			default:

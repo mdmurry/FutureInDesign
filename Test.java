@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Test {
 
 	public static void main(String[] args) {
+		
 		// test case to determine why Scanner is throwing exception
 		// create first instance of scanner
 		Scanner scanner1 = new Scanner(System.in);

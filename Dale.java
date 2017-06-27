@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Dale {
 	
 	Player player;
+	Scanner scanner;
 	
 	public int GetRandom(int range){
 		Random random = new Random();
@@ -14,14 +15,13 @@ public class Dale {
 	
 	public int GetResponse(){
 		int response;
-		Scanner input = new Scanner(System.in);
-		response = input.nextInt();
-		input.close();
+			response = scanner.nextInt();
 		return(response);
 	}
 	
-	public void Next(Player player){
+	public void Next(Player player, Scanner scanner){
 		this.player = player;
+		this.scanner = scanner;
 		System.out.println("... and there " + player.GetName() + " was, about to");
 		System.out.println(" enter a desolate Western town filled with angry robots.");
 		
